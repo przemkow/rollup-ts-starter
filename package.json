@@ -5,6 +5,9 @@
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.esm.js",
   "types": "./dist/types/index.d.ts",
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "test": "jest",
     "clean_dist": "rimraf dist/*",
@@ -24,6 +27,8 @@
     "@types/jest": "^25.1.0",
     "@typescript-eslint/eslint-plugin": "^2.24.0",
     "@typescript-eslint/parser": "^2.24.0",
+    "@vue/test-utils": "^1.0.0-beta.32",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^25.1.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
@@ -35,10 +40,13 @@
     "rimraf": "^3.0.2",
     "rollup": "^2.1.0",
     "rollup-plugin-typescript2": "^0.26.0",
+    "rollup-plugin-vue": "^5.1.6",
     "standard-version": "^7.1.0",
     "ts-jest": "^25.2.1",
     "tslib": "^1.11.1",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "vue-jest": "^3.0.5",
+    "vue-template-compiler": "^2.6.11"
   },
   "husky": {
     "hooks": {
@@ -52,5 +60,8 @@
       "eslint --fix",
       "git add"
     ]
+  },
+  "dependencies": {
+    "vue": "^2.6.11"
   }
 }

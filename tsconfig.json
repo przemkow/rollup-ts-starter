@@ -7,24 +7,23 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "sourceMap": true,
-    "lib": ["esnext"],
+    "lib": ["esnext", "dom"],
     "strict": true,
     "sourceRoot": "./src",
-    "rootDir": "./src",
+    "rootDir": "./",
     "outDir": "dist",
     "declaration": true,
     "declarationDir": "dist/types",
     "types": ["@types/jest"]
   },
   "include": [
-    "**/*"
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.vue"
   ],
   "exclude": [
     "dist",
-    "build",
     "node_modules",
-    "**/*.test.ts",
-    "**/*.spec.ts",
-    "**/*.mock.ts"
+    "build"
   ]
 }
